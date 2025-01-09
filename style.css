@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --fonte-padrao:arial, verdana, helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', serif;
+    --fonte-android:'Android',serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #84E1AD;
+    font-family: var(--fonte-padrao);
+}
+header{
+    padding: 20px 10px 10px 10px;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(to bottom,#3CDA83,#1A5C38);
+}
+header > h1{
+    font-weight: normal;
+    text-shadow: 2px 2px 10px #000000b4;
+    font-family: var(--fonte-destaque);
+}
+
+header > p {
+    color: #669379;
+    text-shadow: 1px 1px 4px #ffffff61; 
+}
+nav {
+    padding: 10px ;
+    background-color: #1A5C38;
+}
+nav  a{ 
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    color: #1A5C38;
+    background-color: #2FA866;
+}
+
+main{
+    max-width: 1000px;
+    min-width: 165px;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+}
+main h1{ 
+    font-weight: normal;
+    padding: 10px 0px;
+    color: #195C38;
+    font-family: var(--fonte-android);
+}
+main h2{
+    font-weight: normal;
+    color: #195C38 ;
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(90deg,#C4EBD5,transparent);
+}
+
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    padding: 8px 0px;
+    line-height: 1.5em;
+}
+
+main .pequena{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+img{
+    width: 100%;
+}
+ .video{
+    background-color: #195C38;
+    margin:0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+ }
+
+ .video > iframe{
+    position: absolute;
+    top:10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+ }
+
+aside{
+    background-color: #C5EBD6;
+    padding: 10px ;
+    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside >h3{
+    color: #fff;
+    background-color: #195C38;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+}
+
+aside > ul{
+    columns: 2;
+    list-style-position: inside;
+    margin-left: 16px;
+}
+
+footer  {
+    text-align: center;
+    color: #fff;
+    background-color: #1A5C38;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
